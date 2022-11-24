@@ -29,6 +29,8 @@ Litcoin Address: ltc1ql4xv66lkkutj9t5pdq3wqhuvzjw8tgndc0zynp
 Ethereum Address: 0xeb12e38Bd62C1e919649fF4D085de71b952c7310
 
 ## Credits
+[Dobby](https://github.com/jmpews/Dobby)
+
 [LSPosed](https://github.com/LSPosed/LSPosed)
 
 [XposedBridge](https://github.com/rovo89/XposedBridge)
