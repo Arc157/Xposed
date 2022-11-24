@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'de.robv.android.xposed'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 33
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        consumerProguardFiles 'consumer-rules.pro'
+        externalNativeBuild {
+            cmake {
+                cppFlags '-std=c++20'
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += ['src/main/apacheCommonsLang']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.22.1'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        prefab true
+    }
+}
+
+dependencies {
+    implementation 'org.lsposed.lsplant:lsplant-standalone:5.2'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+}
