@@ -24,7 +24,7 @@ If you appreciate this project, feel free to donate :)
 
 Bitcoin Address: bc1qmu2fqddueu0yw754xfjk2ugh7qrp00msgm4u2w
 
-Litcoin Address: ltc1ql4xv66lkkutj9t5pdq3wqhuvzjw8tgndc0zynp
+Litecoin Address: ltc1ql4xv66lkkutj9t5pdq3wqhuvzjw8tgndc0zynp
 
 Ethereum Address: 0xeb12e38Bd62C1e919649fF4D085de71b952c7310
 
