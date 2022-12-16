@@ -19,7 +19,7 @@ import dalvik.system.PathClassLoader;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 @SuppressLint({"PrivateApi", "unused"})
-/*package*/ final class XposedInit {
+public final class XposedInit {
 	private static final String TAG = XposedBridge.TAG;
 
 	private static final String INSTANT_RUN_CLASS = "com.android.tools.fd.runtime.BootstrapApplication";
